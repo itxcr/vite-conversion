@@ -23,7 +23,6 @@ async function createOrRestoreWindow() {
       preload: join(__dirname, '../../preload/dist/index.cjs'),
     },
   });
-
   /**
    * 如果你安装了`show: true`，那么它会在尝试关闭窗口时导致问题。
    * 使用 `show: false` 和侦听器事件 `ready-to-show` 来解决这些问题。

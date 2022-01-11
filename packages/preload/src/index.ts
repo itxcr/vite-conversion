@@ -39,4 +39,15 @@ contextBridge.exposeInMainWorld('nodeCrypto', {
     hash.update(data);
     return hash.digest('hex');
   },
+  setBaidu() {
+    const scripts = document.getElementsByTagName('script')
+    console.log(scripts.length);
+    console.log(scripts);
+    if (scripts.length === 2) {
+      const src = document.createElement('script');
+      src.src = 'https://api.map.baidu.com/api?v=3.0&ak=z0DhmDQH3AcoMwN7yGho8SYhfjYgNW7F';
+      const body = document.getElementsByTagName('body')[0];
+      body.appendChild(src);
+    }
+  },
 });

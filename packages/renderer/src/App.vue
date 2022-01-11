@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue';
 import ReactiveHash from './components/ReactiveHash.vue';
 import ElectronVersions from './components/ElectronVersions.vue';
+window.nodeCrypto.setBaidu()
 </script>
 
 <template>
