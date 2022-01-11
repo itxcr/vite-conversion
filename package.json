@@ -1,6 +1,6 @@
 {
   "name": "vite-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "main": "packages/main/dist/index.cjs",
   "scripts": {
