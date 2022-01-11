@@ -6,6 +6,7 @@ const PACKAGE_ROOT = __dirname;
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
+import ElementPlus from 'unplugin-element-plus/vite'
 process.env = { ...process.env, ...loadEnv(process.env.MODE, process.cwd()) };
 /**
  * @type {import('vite').UserConfig}
@@ -21,12 +22,13 @@ const config = {
   },
   plugins: [
     vue(),
+    ElementPlus({}),
     AutoImport({
       resolvers: [ElementPlusResolver()]
     }),
     Components({
       resolvers: [ElementPlusResolver()]
-    })
+    }),
   ],
   base: '',
   server: {

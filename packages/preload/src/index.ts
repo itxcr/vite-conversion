@@ -41,8 +41,6 @@ contextBridge.exposeInMainWorld('nodeCrypto', {
   },
   setBaidu() {
     const scripts = document.getElementsByTagName('script')
-    console.log(scripts.length);
-    console.log(scripts);
     if (scripts.length === 2) {
       const src = document.createElement('script');
       src.src = 'https://api.map.baidu.com/api?v=3.0&ak=z0DhmDQH3AcoMwN7yGho8SYhfjYgNW7F';
